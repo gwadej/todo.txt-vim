@@ -1,4 +1,4 @@
-DIRS=doc ftdetect ftplugin plugin syntax
+DIRS=doc ftdetect syntax
 todotxt.tar.gz:
 	tar -zcvf todotxt.tar.gz --exclude '*.swp' $(DIRS)
 

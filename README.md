@@ -10,6 +10,8 @@ Original author Graham Davies, 2009.
 
 New syntax, plugin packaging and upload to github by David O'Callaghan, 2010.
 
+Simplification for my use by G. Wade Johnson 2013.
+
 Install
 --------
 
