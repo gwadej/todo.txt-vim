@@ -22,6 +22,7 @@ syn match       todoDate          /\d\d\d\d-\d\d-\d\d/
 syn match       todoDone          /^x .*/
 syn match       todoPriority      /([A-Z])/
 syn match       todoProject       /+\S\+/
+syn match       todoTag           /[a-zA-Z_0-9\-]\+:\w\S*/
 
 if version >= 508 || !exists("did_conf_syntax_inits")
   if version < 508
@@ -50,6 +51,7 @@ if version >= 508 || !exists("did_conf_syntax_inits")
   HiLink todoDone           NonText
   hi todoPriority term=bold cterm=bold gui=bold
   HiLink todoProject        Identifier
+  HiLink todoTag            Type
 
   syn region todotxtPriA matchgroup=todotxtPriA start=/^\s*\((A)\)/ end=/ / contains=ALL
   syn region todotxtPriB matchgroup=todotxtPriB start=/^\s*\((B)\)/ end=/ / contains=ALL
