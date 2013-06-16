@@ -17,11 +17,11 @@ elseif exists("b:current_syntax")
 endif
 
 " todotxt.com todo.txt compatible
-syn match       todoContext       /\s\?@\S\+/                     
-syn match       todoDate          /\d\d\d\d-\d\d-\d\d/            
-syn match       todoDone          /^x .*/        
+syn match       todoContext       /\s\?@\S\+/
+syn match       todoDate          /\d\d\d\d-\d\d-\d\d/
+syn match       todoDone          /^x .*/
 syn match       todoPriority      /([A-Z])/
-syn match       todoProject       /+\S\+/                         
+syn match       todoProject       /+\S\+/
 
 if version >= 508 || !exists("did_conf_syntax_inits")
   if version < 508
@@ -43,7 +43,7 @@ if version >= 508 || !exists("did_conf_syntax_inits")
   " Ignore White bold
   " Error White on Red
   " Todo Black on Yellow
-  " Normal 
+  " Normal
 
   HiLink todoContext        Statement
   HiLink todoDate           Special

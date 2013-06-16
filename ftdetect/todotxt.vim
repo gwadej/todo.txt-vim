@@ -1,7 +1,7 @@
 " Vim filetype detection file
 " Language:	todo.txt (http://todotxt.com/)
 " Maintainer:   G. Wade Johnson
-" URL:		
+" URL:
 " Version:	3
 "
 au! BufRead,BufNewFile todo.txt,done.txt set filetype=todotxt
